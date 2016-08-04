@@ -1,0 +1,10 @@
+application: firexhat
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+  
+- url: /
+  script: index.htm
