@@ -1,0 +1,17 @@
+application: firexhat
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+default_expiration: "7d"
+
+handlers:
+  
+- url: /
+  script: index.htm
+
+- url: /javascript
+  static_dir: javascript
+  http_headers:
+    Vary: Accept-Encoding
