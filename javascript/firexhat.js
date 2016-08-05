@@ -2,10 +2,10 @@ function $(layer){
 			return document.getElementById(layer)
 		}
 		var config = {
-			apiKey: "AIzaSyBUGjb-i_q9M7GN_k0XkfNZEDP3QOxTIYQ",
-			authDomain: "fireteste-904b1.firebaseapp.com",
-			databaseURL: "https://fireteste-904b1.firebaseio.com",
-			storageBucket: "fireteste-904b1.appspot.com",
+			apiKey: "AIzaSyAyi0KdBqi7Oow6Yy8EStEQEBBn1sT1c2A",
+			authDomain: "firexhat.firebaseapp.com",
+			databaseURL: "https://firexhat.firebaseio.com",
+			storageBucket: "firexhat.appspot.com",
 		}
 		firebase.initializeApp(config)		
 		var database=firebase.database()
@@ -13,7 +13,7 @@ function $(layer){
 		var check
 		url2=location.href.split('/')
 		url=url2[2].split('.')
-		var domain='xhat/'+url[0]
+		var domain='firexhat/'+url[0]
 		function now(time) {
 			date=new Date(time)
 			month=date.getMonth()+1
