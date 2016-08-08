@@ -1,0 +1,37 @@
+*{
+	font:100% Trebuchet MS,Verdana,Arial,sans-serif
+}
+b{
+	font-weight:bold
+}
+p.message{
+	margin:0px
+}
+p.message:nth-of-type(odd){
+	background:#FFFFFF
+}
+p.message:nth-of-type(even){
+	background:#EEEEEE
+}
+span.data{
+	font-size:60%;
+	color:#999999;
+}
+span.user{
+	font-weight:bold
+}
+span.message{
+	margin-left:10px
+}
+fieldset{
+	border:dotted 1px #999999
+}
+.margin{
+	margin:auto;
+	width:100%;
+	max-width:1000px;
+}
+.bar{
+	max-width:100%;
+	height:auto;
+}
