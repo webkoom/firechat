@@ -15,3 +15,20 @@ handlers:
   static_dir: javascript
   http_headers:
     Vary: Accept-Encoding
+
+- url: /stylesheet
+  static_dir: stylesheet
+  http_headers:
+    Vary: Accept-Encoding
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  http_headers:
+    Vary: Accept-Encoding
+
+- url: /image/(.*\.(gif|png|jpg))$
+  static_files: image/\1
+  upload: image/.*\.(gif|png|jpg)$
+  http_headers:
+    Vary: Accept-Encoding
